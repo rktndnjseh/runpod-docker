@@ -10,5 +10,7 @@ ssh 접속
 nvidia-smi로 gpu 연결 확인
 docker 설치
 apt update
+
 apt install -y docker.io
+
 docker --version
