@@ -18,3 +18,14 @@ apt update
 apt install -y docker.io
 
 docker --version
+mkdir -p /workspace/docker-data
+
+docker login
+
+docker tag panda-local-vlm-grasp:0.1.0 sungyeon1/panda-local-vlm-grasp:0.1.0
+
+docker images | grep panda
+
+docker push sungyeon1/panda-local-vlm-grasp:0.1.0
+
+<img width="232" height="253" alt="image" src="https://github.com/user-attachments/assets/cb30c460-bd0d-4c1a-b802-4d8c201805c2" />
